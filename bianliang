@@ -1,6 +1,50 @@
+变量定义
 <?php
 $x=1;
 $y=2;
 $z=$x+$y;
 echo $z;
+?>
+
+
+全局&局部变量
+<?php
+$x=1;//全局变量，当前代码运行结束前都调用x的值都为1
+
+function text()//建立了一个函数，函数名text
+{
+    $y=2;//局部变量，当前函数运行结束后即销毁
+    echo"x的值为：$x";//虽然x是全局变量，但是函数中未调用，所以无法输出
+	echo"<br>";
+    echo"y的值为：$y";
+	echo"<br>";
+}
+text();//运行函数
+
+echo"x的值为：$x";
+echo"<br>";
+echo"y的值为：$y";
+//运行结果中，提示了函数中的x和函数外y的值未定义
+?>
+
+
+global关键字：用于调用函数外的变量
+<?php
+$x=1;
+$y=2;
+
+function text()
+{
+   global $x,$y;//调用了全局变量x,y
+    echo"x的值为：$x";
+	echo"<br>";
+    echo"y的值为：$y";
+	echo"<br>";
+}
+text();
+
+echo"x的值为：$x";
+echo"<br>";
+echo"y的值为：$y";
+//运行结果中x,y的值相同
 ?>
