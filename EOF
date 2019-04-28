@@ -1,0 +1,8 @@
+不限于EOF，任何标识符都可以用来定义
+<?php
+  echo <<<EOF
+  英雄不朽<br>
+  our world is worth fighting for<br>
+ EOF;
+?>
+好处是输出一大段字符串时，无需定义字符串变量，节省内存空间
