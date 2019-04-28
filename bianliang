@@ -42,9 +42,33 @@ function text()
 	echo"<br>";
 }
 text();
+//x的值为1，y的值为2
+?>
 
-echo"x的值为：$x";
-echo"<br>";
-echo"y的值为：$y";
-//运行结果中x,y的值相同
+
+
+static关键字
+<?php
+function test()
+{
+	static $a=1;
+	$a+=2;
+	echo $a;
+}
+test();
+test();
+test();
+//每次调用该函数时，该变量将会保留着函数前一次被调用时的值。
+//仍然为局部变量
+?>
+
+
+参数
+<?php
+function test($a)
+{
+	echo $a;
+}
+test(1);
+//参数的意义在于，定义变量时不直接赋值，调用函数时才赋值，具有灵活性
 ?>
