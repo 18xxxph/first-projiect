@@ -1,0 +1,44 @@
+利用var_dump()函数可以返回变量的值和类型
+String（字符串）
+<?php
+  $a="hello world";
+  var_dump($a);
+?>
+Integer（整型）
+<?php
+  $a=10;
+  var_dump($a);
+?>
+Float（浮点型）
+<?php
+  $a=10.1212;
+  var_dump($a);
+?>
+Boolean（布尔型）
+布尔型变量只能返回true和false，无需定义
+Array（数组）
+<?php
+  $arry=("1","2","3");
+  var_dump($arry);
+  //数组的第一个元素的下标为0
+?>
+Object（对象）//受限于没有系统学习过当前语言的类，因此不做创新
+<?php
+class Car
+{
+  var $color;
+  function __construct($color="green") {
+    $this->color = $color;
+  }
+  function what_color() {
+    return $this->color;
+  }
+}
+?>
+NULL（空值）
+<?php
+  //null的作用是清空当前变量已被赋予的值
+  $a=1;
+  $a=null;
+  var_dump($a);
+?>
