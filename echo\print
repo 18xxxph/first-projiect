@@ -1,0 +1,24 @@
+不是很特别的输出关键字，可以输出包括文本在内的各种变量
+<?php
+  echo "Hello world!<br>"；
+  echo "123<br>"；
+  echo "我是谁"；
+?>
+
+
+文本变量也可以输出
+<?php
+  $txt1="18信息高";
+  $txt2="陈柯迪";
+  echo"$txt1 $txt2";
+?>
+
+print和echo几乎相同
+<?php
+  print"上学";
+  print"坐电梯";
+  print"放学";
+  $txt1="玩游戏";
+  $txt2="就是要赢";
+  print"$txt1$txt2";
+?>
