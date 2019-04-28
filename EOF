@@ -3,6 +3,16 @@
   echo <<<EOF
   英雄不朽<br>
   our world is worth fighting for<br>
- EOF;
+EOF;
 ?>
-好处是输出一大段字符串时，无需定义字符串变量，节省内存空间
+好处是输出一大段字符串时，无需额外定义字符串变量，节省内存空间
+当然，也可以输出定义好的字符串变量
+<?php
+  $txt1=英雄不朽;
+  $txt2=our world is worth fighting for;
+  echo <<<EOF
+  $txt1<br>
+  $txt2<br>
+EOF;//此行必须独立一行并且无空格
+?>
+
