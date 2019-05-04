@@ -1,0 +1,14 @@
+ 字符串型变量
+ <?php
+$txt="heroes never die";//定义了名为txt的文本变量，并输出
+echo $txt;
+?> 
+
+
+并置运算符
+ <?php
+$txt1="heroes never die";
+$txt2="英雄不朽!";
+echo $txt1 . " " . $txt2;//并置运算符的作用是把两串字符串放在一起，没有会报错
+//使用了两次并置运算符的目的是保持一个空格
+?> 
