@@ -1,0 +1,135 @@
+基础运算 
+ <?php
+$a=1;
+$b=2;
+
+echo ($a+$b);//结果为3
+echo '<br>';
+echo ($b-$a);//结果为1
+echo '<br>';
+echo ($a*$b);//结果为2
+echo '<br>';
+echo ($a/$b);//结果为0.5
+echo '<br>';
+echo ($a%$b);//结果为0
+echo '<br>';
+echo -$a;//结果为-1
+echo '<br>';
+//intdiv()为7.0及以上的函数，故无法调用
+?> 
+
+
+
+
+赋值运算
+ <?php
+$a=1;
+$a+=2;
+echo $a;
+echo '<br>';
+
+$b=2;
+$b-=2;
+echo $b;
+echo '<br>';
+
+$c=4;
+$c/=2;
+echo $c;
+echo '<br>';
+
+$d=2;
+$d*=2;
+echo $d;
+echo '<br>';
+
+$e=7;
+$e%=3;
+echo $e;
+echo '<br>';
+//运算结果为3 0 2 4 1，符合赋值运算符的运算结果
+?> 
+
+
+
+并置运算符已经试验过，不需重复
+
+
+
+
+递增/递减运算符
+ <?php
+$a=1;
+echo $a++;
+echo '<br>';//结果为1
+
+$b=1;
+echo ++$b;
+echo '<br>';//结果为2
+
+$c=2;
+echo $c--;
+echo '<br>';//结果为2
+
+$d=2;
+echo --$d;
+echo '<br>';//结果为1
+//只有在变量进行递增或递减的同时输出，才能输出当前状态的返回值，下一行输出则为递增或递减之后的值
+?> 
+
+
+
+
+比较运算符（返回布尔型变量的值，即true或false）
+
+<?php
+$x=2; 
+$y="1";
+//值不相等，且数据类型相同
+var_dump($x == $y);//false
+echo "<br>";
+var_dump($x === $y);//false
+echo "<br>";
+var_dump($x != $y);//true
+echo "<br>";
+var_dump($x !== $y);//为false
+echo "<br>";
+ 
+$a=10;
+$b=20;
+//a的值小于b
+var_dump($a > $b);//false
+echo "<br>";
+var_dump($a < $b);//true
+?>
+
+
+
+
+
+数组运算符
+
+<?php
+$x = array("a" => "red", "b" => "green"); 
+$y = array("c" => "blue", "d" => "yellow"); 
+//数组中的数据类型相同，值不同
+$z = $x + $y; // $x 和 $y 数组合并
+var_dump($z);//输出了含有$x和$y数组中所有值的数组
+echo '<br>';
+var_dump($x == $y);//false
+echo '<br>';
+var_dump($x === $y);false
+echo '<br>';
+var_dump($x != $y);//true
+echo '<br>';
+var_dump($x <> $y);//true
+echo '<br>';
+var_dump($x !== $y);//true
+?>
+
+
+三元运算符
+<?php
+$x=2;
+$x>1?"true":"false";
+?>
