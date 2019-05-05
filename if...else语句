@@ -1,0 +1,53 @@
+if语句<?php
+$x=90;
+if($x>=60)//当且仅当括号内的值为真时，继续执行if语句，否则跳转至if语句结束后继续执行
+{
+	echo "您及格了";
+}
+echo "您的分数为：'$x'";
+?>
+
+
+
+if...else语句
+<?php
+$x=50;
+if($x>=60)
+{
+	echo "您及格了";
+	echo '<br>';
+}
+else
+{
+	echo "您没有及格";
+	echo '<br>';
+}
+echo "您的分数为：$x";
+?>
+相比if语句，if...else语句可以让if()多一个返回值
+
+
+
+
+
+if...elseif...else
+<?php
+$x=60;
+if($x>60)
+{
+	echo "您及格了";
+	echo '<br>';
+}
+elseif($x=60)
+{
+	echo "您刚刚好及格，请继续努力";
+	echo '<br>';
+}
+else
+{
+	echo "您没有及格";
+	echo '<br>';
+}
+echo "您的分数为：$x";
+?>
+elseif是可以无限叠加的，为if语句提供了最大限度的可满足条件
