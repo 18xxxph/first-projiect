@@ -1,0 +1,52 @@
+<?php
+$heroes=array("mercy","roadhog","junkrat","mei");
+echo "owerwatch have heroes named:".$heroes[0].",".$heroes[1].",".$heroes[2]." and ".$heroes[3];
+?>
+数组中可将任意值作为元素。包括数值和字符串
+数组下标从0开始，可以为不同的元素自定义不同下标
+
+输出数组的长度（一般情况下为输出数组中元素的数量）
+<?php
+$heroes=array(1,2,3,4);
+echo count($heroes);
+?>
+
+
+
+遍历
+<?php
+$num=array(1,2,3,4);
+$arrlength=count($num);
+for($a=0;$a<$arrlength;$a++)//也可以用$a<=$arrlength-1，更为直观
+{
+	echo $num[$a];
+	echo '<br>';
+}
+?>
+遍历的核心思想是，从下标为0的元素开始输出，输出至下标为数组长度-1的元素时停止
+
+
+
+
+关联数组
+<?php
+$alpha=array("a"=>"1","b"=>"2","c"=>"3","d"=>"4");
+//关联的数组为“a,b,c,d”和“1,2,3,4”
+echo "字母a的序号为".$alpha["a"];
+?>
+
+
+
+
+
+
+遍历关联数组
+<?php
+$no=array("a"=>"1","b"=>"2","c"=>"3","d"=>"4");
+foreach($no as $alpha=>$num)
+{
+	echo "字母".$alpha."的序号为".$num;
+	echo '<br>';
+}
+?>
+将某个数组定义为关联数组以后，可以同时遍历关联的数组
