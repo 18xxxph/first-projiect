@@ -1,0 +1,36 @@
+<?php
+switch(10)
+{
+	case 5:
+	echo "此数为5";
+  break;
+	
+	case 10:
+	echo "此数为10";
+  break;
+	
+	default:
+	echo "此数不在给出的范围之内"；
+}
+?>
+相对于if语句而言，switch语句在具备了相同功能，而且格式比if语句更为简洁明了
+
+
+
+
+使用变量作为判断条件也是可行的，包括字符串在内
+<?php
+switch($x=20)
+{
+	case $x<10:
+	echo "此数小于10";
+	break;
+	
+	case $x=10:
+	echo "此数为10";
+	break;
+	
+	default:
+	echo "此数大于10";
+}
+?>
