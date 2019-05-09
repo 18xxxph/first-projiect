@@ -1,8 +1,8 @@
 不是很特别的输出关键字，可以输出包括文本在内的各种变量
 <?php
-  echo "Hello world!<br>"；
-  echo "123<br>"；
-  echo "我是谁"；
+  echo "Hello world!<br>";
+  echo "123<br>";
+  echo "我是谁";
 ?>
 
 
