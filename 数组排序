@@ -1,0 +1,5 @@
+<?php
+$num=array(9,56,987,28,46,38,1);
+sort($num);
+print_r($num); 
+?> 
