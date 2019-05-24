@@ -1,0 +1,15 @@
+只看得懂第一个$GLOBALS
+
+<?php 
+$a=1; 
+$b=2;
+ 
+function addition() 
+{ 
+    $GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y']; 
+}
+ 
+addition(); 
+echo $z; 
+?>
+定义了一个超级全局变量$GLOBALS[]以后，在函数外也可以直接调用
