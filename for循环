@@ -1,0 +1,23 @@
+
+<?php
+for ($i=1; $i<=5; $i++)
+{
+    echo "The number is " . $i . "<br>";
+}
+?>
+当变量满足for循环的要求时，就会执行for循环中的语句，反之则结束
+比起if...else结构，可以满足大量的重复性条件判断
+
+
+
+
+foreach遍历数组
+
+<?php
+$x=array("1","2","3");
+foreach ($x as $value)
+{
+    echo $value . "<br>";
+}
+?>
+将数组中的元素依次赋给变量value（可自定义名称），然后输出
