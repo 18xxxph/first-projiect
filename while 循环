@@ -15,8 +15,8 @@ do...while循环
 <?php
   $a=1;  
   do{
-    echo "a=".$a;
     a++;
+    echo "a=".$a;
   }while(a<=5)
 ?>
 while的倒桩写法，本质无差别
