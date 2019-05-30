@@ -1,0 +1,66 @@
+函数的格式
+<?php
+  funtion hanshu()//定义了一个叫做hanshu的函数
+  {
+    echo "Hello world!"
+  }
+  hanshu();//执行该函数，可在同一函数内外进行
+?>
+
+
+
+添加参数
+<?php
+function writeName($fname)//此变量虽定义了但未赋值，在调用函数时才赋值
+{
+    echo "陈".$fname."<br>" ;
+}
+echo "我的名字是：";
+writeName("柯迪");
+echo "我妹妹的名字是：";
+writeName("柯德");
+echo "我弟弟的名字是：";
+writeName("柯仪");
+?>
+适用于不完全相同的输出结果，可以节省缺省状态下重复输入同一代码的时间，提高代码复用性
+
+
+复数参数
+<?php
+function writeName($name1,$name2)//同时定义了两个变量，默认name1为第一位
+{
+    echo "陈".$name1.$name2."<br>" ;
+}
+echo "我的名字是：";
+writeName("柯","迪");
+echo "我妹妹的名字是：";
+writeName("美","德");
+echo "我弟弟的名字是：";
+writeName("钦","仪");
+?>
+添加的参数越多，输出结果的灵活性越高
+
+
+
+
+
+返回值：函数的返回值可以自定义，也可以由运行结果决定
+<?php
+function add($a,$b)
+{
+     $c=$a+$b;
+	 return $c;
+}
+echo add(1,2);
+?>
+输出了返回的结果$a+$b
+
+<?php
+function add($a,$b)
+{
+     $c=$a+$b;
+	 return 0;
+}
+echo add(1,2);
+?>
+无论如何改变$a和$b的值，返回值都为0
